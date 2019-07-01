@@ -1,0 +1,41 @@
+html{
+    background: #eeeeee;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    
+    width: 650px;
+}
+h1, p{
+    text-align: center;
+
+}
+section *{
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding:20px;
+    border-radius: 15px;
+    background: rgb(247, 247, 247);
+    box-shadow: gray 1px 1px 5px;
+}
+form{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 16px;
+}
+label:nth-child(odd){
+    justify-self:end;
+}
+li{
+    list-style-type:none;
+
+}
+button{
+    display:grid;
+    justify-items: center;
+}

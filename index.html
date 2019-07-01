@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   <h1 id="title">Survey Form</h1>
+    <section>
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <form action="registro" id="survey-form">
+            <label  for="name" id="name-label">Nombre:</label>
+            <input id="name" type="text" name="name" required placeholder="Escriba su nombre">
+            <label for="email" id="email-label">email:</label>
+            <input id="email" type="email" name="email" required placeholder="Escriba su correo">
+            <label for="age" id="number-label">Age:</label>
+            <input id="number" type="number" name="Age" min="13" max="65" required placeholder="Escriba su edad">
+           
+            <label for="">selecione su opcion</label>
+            <select name="" id="dropdown">
+                <option disabled selected>Selecione</option>
+                    <option value="1">programa</option>
+                    <option value="2">diseno</option>
+                    <option value="3">software</option>
+            
+            </select>
+            <label for="turnos">eliga el turno que desea</label>
+       
+            <ul>
+                    <li><label for="manana">
+                        <input type="radio" name="turno" id="manana" value="manana">Matutino
+                    </label></li>
+                    <li><label for="tarde">
+                            <input type="radio" name="turno" id="tarde" value="tarde">Vespertino
+                        </label></li>
+                    <li><label for="noche">
+                        <input type="radio" name="turno" id="noche" value="noche">Nocturno
+                    </label></li>
+                </ul> 
+     
+            <label for="comida">eliga la comida preferida</label>
+             <ul>
+                      <li>
+                          <label for="arroz">
+                              <input type="checkbox" name="comida" id="arroz" value="arroz"> arroz
+                         </label>
+                         </li>
+                        <li>
+                              <label for="frijoles">
+                            <input type="checkbox" name="comida" id="frijoles" value="frijoles">frijoles
+                         </label>
+                        </li>
+                          <li>
+                           <label for="gallopinto">
+                            <input type="checkbox" name="gallopinto" id="gallopinto" value="gallopinto">GalloPinto
+                             </label>
+                         </li>
+                </ul>
+            
+        <label for="comenta">escriba aqui sus comentarios </label>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="escriba aqui sus comemntarios que nos serviran de ayuda"></textarea>
+        <button type="submit" id="submit">Submit</button>
+  
+        </form>
+       
+        
+
+    </section>
+       
+    
+</body>
+</html>
